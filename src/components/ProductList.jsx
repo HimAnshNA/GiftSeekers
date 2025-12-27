@@ -93,7 +93,9 @@ const allFiltered = showPriceFilter
       <div className="app-container" onClick={closeAll} >
         <div className="header">
           <div className="logo">
-            <img src="../../public/images/logo6.png" alt="Logo" />
+            {/* <img src="../../public/images/logo6.png" alt="Logo" /> */}
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0xNOiqELE5EB04zg3lpXK9KqzpJUhanwpXpAfFdFDGuzRMXg3CweooQ_pwgQ_txenxdNNUQr8GKD0H3OZw15sGPxyQ-C2CJKLqXUeFjR_Fvj1WDnmDI3R9qMcLD4iql4lsgQ3yLBuA0DtkGKt7cFxTxp87gp9IRMjMDtWgusau-I8QuT4O_LuJGch-b7I/s3264/logo6.png" alt="Logo" />
+
            
           </div>
           <div className="cat-box">
