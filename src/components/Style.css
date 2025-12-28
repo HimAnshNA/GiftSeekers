@@ -600,7 +600,7 @@ animation: slideRight  0.4s ease;
     position: fixed;
     top: 90px;
     right: 50%;
-    transform: translateX(50%);
+    /* transform: translateX(50%); */
     width: 260px;
   }
 

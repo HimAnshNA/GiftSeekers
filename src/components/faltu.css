@@ -1,51 +1,5 @@
 
 
-.overlay-backdrop-div {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45);
-  backdrop-filter: blur(6px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
-  animation: fadeIn 0.25s ease;
-  font-family: sans-serif;
-}
-
-.overlay-div {
-  background:  #F9FAFB;
-  width: 90%;
-  height: 70%;
-  max-width: 900px;
-  border-radius: 90px;
-  corner-shape:squircle;
-    box-shadow: 0 10px 20px rgba(139, 255, 216, 0.3);
-
-  animation: slideRight 0.35s ease;
-  position: relative;
-overflow: hidden; 
-display: flex;
-justify-content: end;
-
-}
-
-.close-btn{
-    content: "";
-    position: absolute;
-translate: -60% 35%;
-background: white;
-font-size: medium;
-font-weight: 500;
-height: 100px;
-width: 100px;
-border-radius: 50%;
-display: flex;
-justify-content: center;
-align-items: center;
-transition: 200ms;
-
-}
 
 .img-wrap{
   height: 150px;
@@ -70,22 +24,9 @@ transition: 200ms;
     align-items: center;
     flex-direction: column;
     padding-bottom: 150px;
-
 }
 
-.content-div-right{
-background: #5617FC;
-background: linear-gradient(135deg, rgba(86, 23, 252, 1) 0%, rgba(46, 188, 231, 1) 100%);
-  width: 70%;
-  height: 100%;
-    border-radius: 90px;
-    corner-shape:squircle;
-      animation: slideLeft 0.35s ease;
-  
-      color: white;
-      display: flex;
 
-}
 
 .title-part{
     height: 100%;
@@ -240,58 +181,7 @@ text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);
   font-weight: 600;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0 }
-  to { opacity: 1 }
-}
 
-@keyframes slideRight {
-  from {
-    opacity: 0;
-    transform: translateX(-150px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideLeft {
-  from {
-    opacity: 0;
-    transform: translateX(400px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes appear {
-  from{
-    opacity: 0;
-    transform: translateX(-50px);
-    /* scale: 0.5; */
-    /* clip-path: inset(100% 100% 0 0); */
-  }
-  to{
-    opacity: 1;
-    transform: translateX(0px);
-    /* scale: 1; */
-    /* clip-path: inset(0 0 0 0); */
-  }
-}
 
 .block{
   animation: appear 5s linear;
@@ -304,35 +194,8 @@ text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);
 
 
 
-.overlay-backdrop-div {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45);
-  backdrop-filter: blur(6px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
-  animation: fadeIn 0.25s ease;
-  font-family: sans-serif;
-}
 
-.overlay-div {
-  background:  #F9FAFB;
-  width: 90%;
-  height: 70%;
-  max-width: 900px;
-  border-radius: 90px;
-  corner-shape:squircle;
-    box-shadow: 0 10px 20px rgba(139, 255, 216, 0.3);
 
-  animation: slideRight 0.35s ease;
-  position: relative;
-overflow: hidden; 
-display: flex;
-justify-content: end;
-
-}
 
 .close-btn{
     content: "";
@@ -369,20 +232,7 @@ transition: 200ms;
 }
 
 
-.content-div-right{
-background: #ffffff;
-background: radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 21%, rgba(110, 255, 163, 1) 100%);
-/* background: linear-gradient(135deg, rgba(86, 23, 252, 1) 0%, rgba(46, 188, 231, 1) 100%); */
-  width: 70%;
-  height: 100%;
-    border-radius: 90px;
-    corner-shape:squircle;
-      animation: slideLeft 0.35s ease;
-  
-      color: black;
-      display: flex;
 
-}
 
 .title-part{
     height: 100%;
@@ -557,59 +407,6 @@ text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);
   font-weight: 600;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0 }
-  to { opacity: 1 }
-}
-
-@keyframes slideRight {
-  from {
-    opacity: 0;
-    transform: translateX(-150px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideLeft {
-  from {
-    opacity: 0;
-    transform: translateX(400px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes appear {
-  from{
-    opacity: 0;
-    transform: translateX(-50px);
-    /* scale: 0.5; */
-    /* clip-path: inset(100% 100% 0 0); */
-  }
-  to{
-    opacity: 1;
-    transform: translateX(0px);
-    /* scale: 1; */
-    /* clip-path: inset(0 0 0 0); */
-  }
-}
-
 .block{
   animation: appear 5s linear;
   animation-timeline: view();
@@ -672,9 +469,7 @@ text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);
 
 @media (max-width: 768px) {
 
-  .overlay-backdrop-div {
-    padding: 12px;
-  }
+  
 
   .overlay-div {
     width: 96% !important;
@@ -753,10 +548,7 @@ height: 60% !important;
    border-radius: 90px !important;
    margin: 0px 0px 0px 0px;
   }
-  .title{
-    
-     margin: 0px 0px 0px 0px;
-  }
+
 
 
   .title-part {
@@ -825,33 +617,8 @@ gap: 50px;
 
 /* new overlay css -- ovelay product .jsx */
 
-.title{
-  padding: 75px 30px 20px 30px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    gap: 15px;
-  
-}
-.title h2{
-  font-size: 1.5em;
-  font-weight: 600;
-  padding-bottom: 10px;
-}
-.description{
-  padding-top: 20px;
-  padding-right: 10px;
-  padding-left: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  gap: 20px;
-}
-.description p{
-  font-size: small;
 
-}
+
 .cart-btn{
   margin-bottom: 2px;
 background: rgba(255, 255, 255, 0.2);

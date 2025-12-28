@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect,useRef, useState } from "react";
 import ProductCard from "./ProductCard";
 import FilterButton from "./FilterButton";
 import { IoIosMan } from "react-icons/io";
-// import ProductOverlay from "./ProductOverlay";
+// import ProductOverlayProduct from "./ProductOverlayProduct";
 import "./Style.css";
-import Overlay from "./Overlay";
+import OverlayProduct from "./OverlayProduct";
 import CategoryList from "./CategoryList";
 import SortList from "./SortList";
 import PriceFilter from "./PriceFilter";
@@ -21,6 +21,28 @@ const ProductList = () => {
   const[showPriceFilter,setShowPriceFilter] = useState(false);
   const[minPrice,setMinPrice] = useState(0);
   const[maxPrice,setMaxPrice] = useState(9999999)
+
+
+  const scrollRef = useRef(null);
+useEffect(() => {
+  const el = scrollRef.current;
+  if (!el) return;
+
+  const handleClose = () => {
+    closeAll();
+  };
+
+   el.addEventListener("scroll", handleClose);
+ el.addEventListener("touchstart", handleClose, { passive: true });
+  return () => {
+   el.removeEventListener("scroll", handleClose);
+    el.removeEventListener("touchstart", handleClose);
+  };
+}, []);
+
+
+
+
 
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
@@ -258,7 +280,7 @@ sortToggle={sortToggle} setSortOrder={setSortOrder}
  
         </div>
 
-        <div className="scroll-wrapper">
+        <div className="scroll-wrapper" ref={scrollRef}>
           <div className="product-grid">
             {allFiltered.map((product) => (
   <ProductCard
@@ -270,12 +292,12 @@ sortToggle={sortToggle} setSortOrder={setSortOrder}
           </div>
         </div>
       </div>
-      {/* <ProductOverlay
+      {/* <ProductOverlayProduct
   product={selectedProduct}
   onClose={() => setSelectedProduct(null)}
 /> */}
 
-      <Overlay
+      <OverlayProduct
         product={selectedProduct}
         onClose={() => setSelectedProduct(null)}
       />
@@ -288,9 +310,9 @@ export default ProductList;
 // import { useEffect, useState } from "react";
 // import ProductCard from "./ProductCard";
 // import FilterButton from "./FilterButton";
-// // import ProductOverlay from "./ProductOverlay";
+// // import ProductOverlayProduct from "./ProductOverlayProduct";
 // import "./Style.css"
-// import Overlay from "./Overlay";
+// import OverlayProduct from "./OverlayProduct";
 
 // const ProductList = () => {
 //   const [data, setData] = useState([]);
@@ -358,12 +380,12 @@ export default ProductList;
 // </div>
 
 //     </div>
-// {/* <ProductOverlay
+// {/* <ProductOverlayProduct
 //   product={selectedProduct}
 //   onClose={() => setSelectedProduct(null)}
 // /> */}
 
-// <Overlay product={selectedProduct}
+// <OverlayProduct product={selectedProduct}
 //   onClose={() => setSelectedProduct(null)}  />
 // </>
 
