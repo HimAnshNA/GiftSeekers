@@ -32,13 +32,14 @@ useEffect(() => {
     closeAll();
   };
 
-   el.addEventListener("scroll", handleClose);
- el.addEventListener("touchstart", handleClose, { passive: true });
+  el.addEventListener("scroll", handleClose);
+  el.addEventListener("touchstart", handleClose, { passive: true });
+
   return () => {
-   el.removeEventListener("scroll", handleClose);
+    el.removeEventListener("scroll", handleClose);
     el.removeEventListener("touchstart", handleClose);
   };
-}
+}, []);
 
 
 
