@@ -38,8 +38,7 @@ useEffect(() => {
    el.removeEventListener("scroll", handleClose);
     el.removeEventListener("touchstart", handleClose);
   };
-}, []);
-
+}
 
 
 
