@@ -116,7 +116,9 @@ const allFiltered = showPriceFilter
         <div className="header">
           <div className="logo">
             {/* <img src="../../public/images/logo6.png" alt="Logo" /> */}
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0xNOiqELE5EB04zg3lpXK9KqzpJUhanwpXpAfFdFDGuzRMXg3CweooQ_pwgQ_txenxdNNUQr8GKD0H3OZw15sGPxyQ-C2CJKLqXUeFjR_Fvj1WDnmDI3R9qMcLD4iql4lsgQ3yLBuA0DtkGKt7cFxTxp87gp9IRMjMDtWgusau-I8QuT4O_LuJGch-b7I/s3264/logo6.png" alt="Logo" />
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8o4UZY-G_PxWijXrrqroE5Mpv0i5qx-Q3m8YgG3U_lN8AgzZtu8coUNUpyLt78RlO_NJrovdfGvvgHHgzOKzh79kb116pOcltQUaKb8ZFF77RWesfC7ltmjrJt15s_eZmEuZHSNEp2AoQb7N5rKkvaOTZLwvmv6WyyfI9dNUCJUwB6h2tY0shKkOM_7tA/s320/ChatGPT%20Image%20Dec%2029,%202025,%2004_25_43%20PM.png" alt="Logo" />
+
+           
 
            
           </div>
