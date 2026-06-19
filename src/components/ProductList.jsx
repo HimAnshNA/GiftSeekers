@@ -303,6 +303,7 @@ sortToggle={sortToggle} setSortOrder={setSortOrder}
         product={selectedProduct}
         onClose={() => setSelectedProduct(null)}
       />
+       <span>Made with 💜 By Himanshu</span>
     </>
   );
 };
